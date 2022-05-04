@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
 <body>
-    <p>Um pequeno caminhão pode carregar 50 sacos de areia ou 400 tijolos.
+    <main class="corpoQuestoes">
+        <h1 class="tituloQuestoes">Certo, Simba e Nala, vocês estão um pouco mais proximos de salvar Kiara. Respondam:</h1>
+        <p class="textoQuestoes">Um pequeno caminhão pode carregar 50 sacos de areia ou 400 tijolos.
         Se foram colocados no caminhão 32 sacos de areia, quantos tijolos pode ainda ele carregar?</p>
-        <p>A) 86</p>
-        <p>B) 168</p>
-        <p>C) 144</p> <!--correta-->
-    <button onclick="SNQuestao2()">PRONTO PRA RESPONDER? CLIQUE AQUI</button>
-    <script src="../personagens script/SimbaENala2.js"></script>
+        <p class="alternativas">A) 86</p>
+        <p class="alternativas">B) 168</p>
+        <p class="alternativas">C) 144</p> <!--correta-->
+        <button class="botaoResposta" onclick="recebeRespostas('Escolha uma alternativa: \nA:\nB:\nC:', 'C', '../personagens/SimbaENala3.html', '../gameover.html')">PRONTO PRA RESPONDER? CLIQUE AQUI</button>
+    </main>
+    <script src="../index.js"></script>
 </body>
 </html>

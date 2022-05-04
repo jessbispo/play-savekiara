@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rafiki e Zazu pagina 1</title>
+    <link rel="stylesheet" href="../style.css">
+    <title>Rafiki e Zazu pagina 3</title>
 </head>
 <body>
-    <p>A soma de minha idade com as de minhas duas filhas é 64. Eu tenho trinta anos a mais do que uma
+    <main class="corpoQuestoes">
+        <h1 class="tituloQuestoes">Quase lá</h1>
+        <p class="textoQuestoes">A soma de minha idade com as de minhas duas filhas é 64. Eu tenho trinta anos a mais do que uma
         delas, e a diferença de idade entre as duas são cinco anos. Sabendo que já fiz quarenta anos, qual a
         minha idade?</p>
-        <p>A) 41</p>
-        <p>B) 43</p> <!--correta-->
-        <p>C) 46</p> 
-    <button onclick="RZQuestao3()">PRONTO PRA RESPONDER? CLIQUE AQUI</button>
-    <script src="../personagens script/RafikiEZazu3.js"></script>
+        <p class="alternativas">A) 41</p>
+        <p class="alternativas">B) 43</p> <!--correta-->
+        <p class="alternativas">C) 46</p> 
+        <button class="botaoResposta" onclick="recebeRespostas('Escolha uma alternativa: \nA:\nB:\nC:', 'B', '../vitoria.html', '../gameover.html')">PRONTO PRA RESPONDER? CLIQUE AQUI</button>
+    </main>
+    <script src="../index.js"></script>
 </body>
 </html>

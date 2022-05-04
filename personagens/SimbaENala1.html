@@ -4,21 +4,25 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Certo, simba e nala, vamos testar os seus conhecimentos em matematica</h1>
-    <p>Quatro suspeitos de praticar um crime fazem as seguintes declarações:
+    <main class="corpoQuestoes">
+        <h1 class="tituloQuestoes">Certo, simba e nala, vamos testar os seus conhecimentos em matematica!</h1>
+        <p class="textoQuestoes">Quatro suspeitos de praticar um crime fazem as seguintes declarações:
 
         João: Carlos é o criminoso
         Pedro: eu não sou criminoso
         Carlos: Paulo é o criminoso
         Paulo: Carlos está mentindo
         Sabendo que apenas um dos suspeitos mente, determine quem é o criminoso.</p>
-        <p>A) Carlos</p> <!--correta-->
-        <p>B) Paulo</p>
-        <p>C) Pedro</p>
-    <button onclick="SNQuestao1()">PRONTO PRA RESPONDER? CLIQUE AQUI</button>
-    <script src="../personagens script/SimbaENala1.js"></script>
+        <p class="alternativas">A) Carlos</p> <!--correta-->
+        <p class="alternativas">B) Paulo</p>
+        <p class="alternativas">C) Pedro</p>
+        <button class="botaoResposta" onclick="recebeRespostas('Escolha uma alternativa: \nA:\nB:\nC:', 'A', '../personagens/SimbaENala2.html', '../gameover.html')">PRONTO PRA RESPONDER? CLIQUE AQUI</button>
+    </main>
+    
+    <script src="../index.js"></script>
 </body>
 </html>

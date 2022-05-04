@@ -1,0 +1,254 @@
+/*estilizando index.html*/
+@font-face {
+    font-family: 'LionKing';
+    src: url("../fonts/lion_king.ttf");
+}
+
+* {
+    margin: 0px;
+    padding: 0px; 
+    text-decoration: none;
+    box-sizing: border-box;
+}
+body {
+    height: 100vh;
+    width: 100vw; 
+}
+
+.corpoPrincipal {
+    display: flex;
+    justify-content: center;
+    margin: 10px 200px 10px 80px;
+    padding: 10px 10px;
+    height: 80%;
+    width: 80%;
+    background: url("https://64.media.tumblr.com/421b8c93714e59d1a3d039893dfc8b4c/tumblr_obnjn8UDsZ1uusboho1_1280.gifv");
+    background-size: 100%; 
+}
+
+.tituloPrincipal {
+    display: flex;
+    justify-content: center;
+    font-family: 'LionKing';
+    padding: 0px 0px;
+    font-size: 120px;
+    margin: 10px;
+    color: #fafafa;
+}
+.tituloPrincipal:Hover {
+    color: #f8f8ff;
+}
+
+.textoPrincipal {
+    display: flex;
+    justify-content: center;
+    padding: 20px 200px 0px 200px;
+    margin: 10px;
+    font-family:'LionKing';
+    font-size: 20px;
+    color: #000;
+    background: white;
+   
+}
+    
+
+.botaoPrincipal {
+    padding: 0.8em 6em;
+    border: 2px solid #000;
+    border-radius: 20px;
+    position: relative;
+    margin: 80px 20px 0px 400px;
+    overflow: hidden;
+    background-color: #574232;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: .3s;
+    z-index: 1;
+    font-family: 'LionKing';
+    color: #fafafa;
+   }
+   
+    .botaoPrincipal::before {
+    content: '';
+    width: 0;
+    height: 300%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+    background: #fafafa;
+    transition: .5s ease;
+    display: block;
+    z-index: -1;
+   }
+   
+   .botaoPrincipal:hover::before {
+    width: 105%;
+   }
+   
+   .botaoPrincipal:hover {
+    color: #111;
+   }
+   
+/*estilizando pagina de personagens*/
+
+.tituloPersonagens {
+    display: flex;
+    justify-content: center;
+    padding: 40px 20px;
+    color: #fafafa;
+    font-family:'LionKing';
+    font-size: 40px;
+}
+
+.corpoPersonagens {
+    background: url("../imagens/fundopersonagens.jpg");
+    height: 100vh;
+    width: 100vw; 
+}
+.imagensPersonagens {
+   display: flex;
+   justify-content: space-around;
+   padding: 40px;
+}
+
+.imagem {
+    height: 200px;
+    width: 160px;
+}
+
+
+.imagem:hover {
+    transform: scale(1.1);
+}
+
+.legendaImagens {
+    display: flex;
+    justify-content: center;
+    font-family: 'LionKing';
+    font-size: 18px;
+    color: #f8f8ff;
+}
+/*estilizando paginas de questoes*/
+
+.corpoQuestoes {
+    background: url("../imagens/fundodesfocado.png");
+    background-size: 100%;
+    height: 100vh;
+    width: 100vw; 
+}
+
+.tituloQuestoes {
+    display: flex;
+    justify-content: center;
+    color: #f8f8ff;;
+    padding: 40px 100px;
+    margin: 10px;
+}
+
+.textoQuestoes {
+    font-size: 18px;
+    color: #f8f8ff;
+    padding: 40px 120px;
+    margin: 10px;
+}
+
+.alternativas {
+    color: #f8f8ff;;
+    padding: 10px 120px;
+    margin: 10px;
+    font-size: 18px;
+}
+
+.botaoResposta {
+    display: flex;
+    justify-content: center;
+    margin: 80px 480px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    font-family: 'LionKing';
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   }
+   
+   .botaoResposta:hover {
+    background-color: #d9d9d9;
+    box-shadow: 0px 15px 20px rgba(127, 181, 160, 0.4);
+    color: #000;
+    transform: translateY(-7px);
+   }
+   
+   .botaoResposta:active {
+    transform: translateY(-1px);
+   }
+/*estilizando pagina de vitoria*/
+
+.corpoVitoria {
+    height: 100%;
+    width: 100%;
+    background: url("../imagens/vitoria.png");
+   }
+
+   .tituloVitoria {
+    display: flex;
+    justify-content: center;
+    font-family: 'abril fatface' cursive;
+    font-size: 80px;
+    padding: 30px 60px;
+    margin: 10px;
+    color: #fafafa;
+   }
+
+   .textoVitoria {
+    display: flex;
+    justify-content: center;
+    padding:20px 500px 40px 500px;
+    margin: 10px;
+    font-family:'abril fatface', cursive;
+    font-size: 20px;
+    color: #fafafa;
+   }
+/*estilizando pagina de derrota*/
+
+.corpoDerrota {
+    height: 100%;
+    width: 100%;
+    background: url("../imagens/derrota.png");
+}
+
+.tituloDerrota {
+ display: flex;
+ justify-content: center;
+ font-family: 'abril fatface' cursive;
+ font-size: 80px;
+ padding: 30px 60px;
+ margin: 10px;
+ color: #fafafa;
+}
+
+.tituloDerrota:hover {
+    color: #cbb3bf;
+}
+
+.textoDerrota {
+ display: flex;
+ justify-content: center;
+ padding: 20px 500px 40px 500px;
+ margin: 10px;
+ font-family:'abril fatface', cursive;
+ font-size: 20px;
+ color: #fafafa;
+}
+
+
+   

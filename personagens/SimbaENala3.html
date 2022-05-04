@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>Document</title>
 </head>
 <body>
-    <h1>Quatro amigos se reuniram. Carlos tem a metade da idade de Matheus mais 2 anos. Henrique tem 8 anos. Matheus tem a idade de Henrique mais a metade de sua idade.
+    <main class="corpoQuestoes">
+        <h1 class="tituloQuestoes">Quase lá!</h1>
+        <p class="textoQuestoes">Quatro amigos se reuniram. Carlos tem a metade da idade de Matheus mais 2 anos. Henrique tem 8 anos. Matheus tem a idade de Henrique mais a metade de sua idade.
          Paulo tem a metade da idade de Carlos mais a metade da idade de Henrique. Qual dos amigos é o mais velho?</p>
-        <p>A) Carlos</p>
-        <p>B) Paulo</p>
-        <p>C) Matheus</p> <!--correta-->
-    <button onclick="SNQuestao3()">PRONTO PRA RESPONDER? CLIQUE AQUI</button>
-    <script src="../personagens script/SimbaENala3.js"></script>
+        <p class="alternativas">A) Carlos</p>
+        <p class="alternativas">B) Paulo</p>
+        <p class="alternativas">C) Matheus</p> <!--correta-->
+    <button class="botaoResposta" onclick="recebeRespostas('Escolha uma alternativa: \nA:\nB:\nC:', 'C', '../vitoria.html', '../gameover.html')">PRONTO PRA RESPONDER? CLIQUE AQUI</button>
+    </main>
+    <script src="../index.js"></script>
 </body>
 </html>

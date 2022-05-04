@@ -4,16 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
     <title>TB pagina 3</title>
 </head>
 <body>
-    <h1> Alguns consideram que a cidade de Florianópolis foi fundada no dia 23 de março de 1726, que caiu em um sábado. Após 90 dias, no dia 21 de junho, 
+    <main class="corpoQuestoes">
+        <h1 class="tituloQuestoes">Quase la!</h1>
+        <p class="textoQuestoes"> Alguns consideram que a cidade de Florianópolis foi fundada no dia 23 de março de 1726, que caiu em um sábado. Após 90 dias, no dia 21 de junho, 
         a data assinalou o início do inverno, quando a noite é a mais longa do ano. Esse dia caiu em uma:
-    </h1>   
-    <p>A) Segunda-Feira</p>
-    <p>B) Sexta-Feira</p>
-    <p>C) Sabado</p>
-    <button onclick="TBquestao3()">PRONTO PRA RESPONDER? CLIQUE AQUI</button>
-    <script src="../personagens script/TimaoEPumba3.js"></script>
+        </p>   
+        <p class="alternativas">A) Segunda-Feira</p>
+        <p class="alternativas">B) Sexta-Feira</p>
+        <p class="alternativas">C) Sabado</p>
+        <button class="botaoResposta" onclick="recebeRespostas('Escolha uma alternativa: \nA:\nB:\nC:', 'B', '../vitoria.html', '../gameover.html')">PRONTO PRA RESPONDER? CLIQUE AQUI</button>
+    </main>
+    <script src="../index.js"></script>
 </body>
 </html>
