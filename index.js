@@ -38,5 +38,5 @@ function EscolherPersonagens() {
 }
 /*function utilizada para o botão de tentar novamente na pagina de derrota e para o botao de jogar novamente na pagina de vitoria*/
 function JogarNovamente() {
-    location.assign("./index.html")
+    location.assign("../index.html")
 }
