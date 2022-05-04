@@ -18,8 +18,7 @@ body {
 .corpoPrincipal {
     display: flex;
     justify-content: center;
-    margin: 10px 200px 10px 80px;
-    padding: 10px 10px;
+    flex-direction: column;
     height: 80%;
     width: 80%;
     background: url("https://64.media.tumblr.com/421b8c93714e59d1a3d039893dfc8b4c/tumblr_obnjn8UDsZ1uusboho1_1280.gifv");
@@ -28,27 +27,29 @@ body {
 
 .tituloPrincipal {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     font-family: 'LionKing';
-    padding: 0px 0px;
-    font-size: 120px;
-    margin: 10px;
+    font-size: 60px;
+    margin: 20px;
     color: #fafafa;
 }
 .tituloPrincipal:Hover {
     color: #f8f8ff;
 }
 
-.textoPrincipal {
+.conteudoPrincipal {
     display: flex;
-    justify-content: center;
-    padding: 20px 200px 0px 200px;
-    margin: 10px;
+    background:hsla(0, 100%, 90%, 0.3);
+    padding: 5px;
+    margin: 10px 20px 0px 260px;
+    
+}
+
+.textoPrincipal {
     font-family:'LionKing';
     font-size: 20px;
-    color: #000;
-    background: white;
-   
+    color: #fafafa;
+    padding: 40px 20px 40px 20px;
 }
     
 
@@ -57,7 +58,7 @@ body {
     border: 2px solid #000;
     border-radius: 20px;
     position: relative;
-    margin: 80px 20px 0px 400px;
+    margin: 80px 40px 0px 500px;
     overflow: hidden;
     background-color: #574232;
     text-align: center;
@@ -91,6 +92,7 @@ body {
     color: #111;
    }
    
+   
 /*estilizando pagina de personagens*/
 
 .tituloPersonagens {
@@ -110,14 +112,15 @@ body {
 .imagensPersonagens {
    display: flex;
    justify-content: space-around;
-   padding: 40px;
+   padding: 50px;
 }
 
 .imagem {
+    background: hsla(0, 100%, 90%, 0.3); 
+    border-bottom: 80px;
     height: 200px;
-    width: 160px;
+    width: 180px;
 }
-
 
 .imagem:hover {
     transform: scale(1.1);
@@ -135,36 +138,37 @@ body {
 .corpoQuestoes {
     background: url("../imagens/fundodesfocado.png");
     background-size: 100%;
-    height: 100vh;
-    width: 100vw; 
+    height: 100%;
+    width: 100%;
 }
 
 .tituloQuestoes {
     display: flex;
     justify-content: center;
+    font-family: 'Koulen', cursive;
     color: #f8f8ff;;
-    padding: 40px 100px;
-    margin: 10px;
+    padding: 40px  100px;
+    margin: 0px;
 }
 
 .textoQuestoes {
-    font-size: 18px;
+    font-family: 'Abril Fatface';
+    font-size: 22px;
     color: #f8f8ff;
-    padding: 40px 120px;
+    padding: 0px 120px 0px 120px;
     margin: 10px;
 }
 
 .alternativas {
     color: #f8f8ff;;
     padding: 10px 120px;
-    margin: 10px;
-    font-size: 18px;
+    font-size: 22px;
 }
 
 .botaoResposta {
     display: flex;
     justify-content: center;
-    margin: 80px 480px;
+    margin: 60px 0px 0px 480px;
     padding: 1.3em 3em;
     font-size: 12px;
     font-family: 'LionKing';
@@ -191,30 +195,61 @@ body {
    .botaoResposta:active {
     transform: translateY(-1px);
    }
+
+   .botaoSecundario {
+    display: flex;
+    justify-content: center;
+    margin: 0px 0px 80px 480px;
+    padding: 1.3em 3em;
+    font-size: 12px;
+    font-family: 'LionKing';
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    font-weight: 500;
+    color: #000;
+    background-color: #fff;
+    border: none;
+    border-radius: 45px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+    outline: none;
+   }
+   
+   .botaoSecundario:hover {
+    background-color: #d9d9d9;
+    box-shadow: 0px 15px 20px rgba(127, 181, 160, 0.4);
+    color: #000;
+    transform: translateY(-7px);
+   }
+   
+   .botaoSecundario:active {
+    transform: translateY(-1px);
+   }
 /*estilizando pagina de vitoria*/
 
 .corpoVitoria {
     height: 100%;
     width: 100%;
-    background: url("../imagens/vitoria.png");
+    background: url("https://media2.giphy.com/media/Lp71UWmAAeJHi/giphy.gif");
+    background-size: 100%;
    }
 
    .tituloVitoria {
     display: flex;
     justify-content: center;
-    font-family: 'abril fatface' cursive;
-    font-size: 80px;
-    padding: 30px 60px;
-    margin: 10px;
+    font-family: 'LionKing';
+    font-size: 100px;
+    padding: 50px 90px;
     color: #fafafa;
    }
 
    .textoVitoria {
     display: flex;
     justify-content: center;
-    padding:20px 500px 40px 500px;
+    padding: 20px 200px 100px 200px;
+    font-family:'LionKing';
     margin: 10px;
-    font-family:'abril fatface', cursive;
     font-size: 20px;
     color: #fafafa;
    }
@@ -223,15 +258,16 @@ body {
 .corpoDerrota {
     height: 100%;
     width: 100%;
-    background: url("../imagens/derrota.png");
+    background: url("https://i.pinimg.com/originals/07/4e/55/074e55363a1ecbe24e5f703f24204da3.gif");
+    background-size: 100%;
 }
 
 .tituloDerrota {
  display: flex;
  justify-content: center;
- font-family: 'abril fatface' cursive;
- font-size: 80px;
- padding: 30px 60px;
+ font-family: 'LionKing';
+ font-size: 100px;
+ padding: 50px 90px;
  margin: 10px;
  color: #fafafa;
 }
@@ -243,9 +279,9 @@ body {
 .textoDerrota {
  display: flex;
  justify-content: center;
- padding: 20px 500px 40px 500px;
- margin: 10px;
- font-family:'abril fatface', cursive;
+ padding: 40px 400px 80px 400px;
+ margin: 0px;
+ font-family:'LionKing';
  font-size: 20px;
  color: #fafafa;
 }
