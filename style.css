@@ -1,7 +1,7 @@
 /*estilizando index.html*/
 @font-face {
     font-family: 'LionKing';
-    src: url("../fonts/lion_king.ttf");
+    src: url("./fonts/lion_king.ttf");
 }
 
 * {

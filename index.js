@@ -1,5 +1,5 @@
 /*function utilizada para todas as questões do jogo*/
-function recebeRespostas (textoPrompt, respostaCerta, urlCerta, urlErrada) {
+function recebeRespostas(textoPrompt, respostaCerta, urlCerta, urlErrada) {
 
     let escolhaUsuario = prompt(textoPrompt)
     let tentativas = 2
